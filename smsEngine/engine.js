@@ -5,6 +5,10 @@ const client = require('twilio')(accountSid, authToken);
 const twilioSms = require('./twilio')
 
 
+
+
+
+
 //====================  The Interval  ========================//
 
 const interval = async (req, res) => {
@@ -76,8 +80,8 @@ const timeOut = async () => {
             );
 
             let milliseconds = targetTime.getTime();
-            
-            let random = Math.floor(Math.random() * userDetails[i].messages.length)
+
+            let random = Math.floor(Math.random() * userDetails[i].messages.length + 1)
 
             setTimeout(twilioSms.sendSms(userDetails[i].messages[random], userDetails[i].mobileNumber, process.env.senderNumber), milliseconds - Date.now())
 
@@ -96,3 +100,8 @@ const timeOut = async () => {
 
 
 module.exports = { interval }
+
+
+
+
+

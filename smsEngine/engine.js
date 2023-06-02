@@ -3,7 +3,6 @@ const accountSid = process.env.twilioAccountSid;
 const authToken = process.env.twilioAuthToken;
 const client = require('twilio')(accountSid, authToken);
 const twilioSms = require('./twilio')
-const taskModel = require('../models/taskModel')
 
 
 

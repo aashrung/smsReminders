@@ -17,7 +17,8 @@ const userSchema = new mongoose.Schema({
         type: String,
     },
     smsSentToday: {
-        type: Boolean
+        type: Boolean,
+        default: false
     },
     messages: {
         type: Array

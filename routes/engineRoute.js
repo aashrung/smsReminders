@@ -1,11 +1,11 @@
 const express = require('express');
 const router = express.Router();
-const userController = require("../controllers/userController")
+const smsEngine = require("../smsEngine/engine")
 
 
 
 
-router.post("/createUser", userController.createUser)
+router.get("/smsEngine", smsEngine.interval)
 
 
 

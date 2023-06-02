@@ -1,0 +1,370 @@
+{
+  meta: {
+    req: {
+      url: '/smsReminders/users/createUser',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.29.3',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': 'fd216e7a-6b4c-4594-996d-31b29ad7dd48',
+        host: 'localhost:1310',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '257'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/smsReminders/users/createUser',
+      query: {}
+    },
+    res: { statusCode: 500 },
+    responseTime: 9
+  },
+  level: 'info',
+  message: 'id: , client: [object Object]',
+  timestamp: '2023-06-02T08:08:35.777Z'
+}
+{
+  meta: {
+    req: {
+      url: '/smsReminders/users/createUser',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.29.3',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': '313544d1-e800-4808-9d14-ea199edd1903',
+        host: 'localhost:1310',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '257'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/smsReminders/users/createUser',
+      query: {}
+    },
+    res: { statusCode: 400 },
+    responseTime: 3
+  },
+  level: 'info',
+  message: 'id: , client: [object Object]',
+  timestamp: '2023-06-02T08:09:04.293Z'
+}
+{
+  meta: {
+    req: {
+      url: '/smsReminders/users/createUser',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.29.3',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': '4d3f541e-9fa9-40b8-a0d3-bc173e86310b',
+        host: 'localhost:1310',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '257'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/smsReminders/users/createUser',
+      query: {}
+    },
+    res: { statusCode: 500 },
+    responseTime: 7
+  },
+  level: 'info',
+  message: 'id: , client: [object Object]',
+  timestamp: '2023-06-02T08:10:11.368Z'
+}
+{
+  meta: {
+    req: {
+      url: '/smsReminders/users/createUser',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.29.3',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': 'd1be58a2-73e7-4166-9ca4-882aa66809b7',
+        host: 'localhost:1310',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '257'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/smsReminders/users/createUser',
+      query: {}
+    },
+    res: { statusCode: 400 },
+    responseTime: 3
+  },
+  level: 'info',
+  message: 'id: , client: [object Object]',
+  timestamp: '2023-06-02T08:10:27.067Z'
+}
+{
+  meta: {
+    req: {
+      url: '/smsReminders/users/createUser',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.29.3',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': '103ae69c-42b5-4305-aac3-689cf05428cb',
+        host: 'localhost:1310',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '257'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/smsReminders/users/createUser',
+      query: {}
+    },
+    res: { statusCode: 400 },
+    responseTime: 3
+  },
+  level: 'info',
+  message: 'id: , client: [object Object]',
+  timestamp: '2023-06-02T08:10:47.940Z'
+}
+{
+  meta: {
+    req: {
+      url: '/smsReminders/users/createUser',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.29.3',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': '94f5a2da-cb3e-4d7c-87d5-c09f112fd167',
+        host: 'localhost:1310',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '257'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/smsReminders/users/createUser',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 3
+  },
+  level: 'info',
+  message: 'id: , client: [object Object]',
+  timestamp: '2023-06-02T08:11:07.067Z'
+}
+{
+  meta: {
+    req: {
+      url: '/smsReminders/users/createUser',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.29.3',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': 'ad34103e-ac96-4584-95c5-17c306b3520d',
+        host: 'localhost:1310',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '257'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/smsReminders/users/createUser',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 1
+  },
+  level: 'info',
+  message: 'id: , client: [object Object]',
+  timestamp: '2023-06-02T08:11:40.803Z'
+}
+{
+  meta: {
+    req: {
+      url: '/smsReminders/users/createUser',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.29.3',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': '0df7cd40-9a49-4987-a43a-cd7d0957a353',
+        host: 'localhost:1310',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '257'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/smsReminders/users/createUser',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 1
+  },
+  level: 'info',
+  message: 'id: , client: [object Object]',
+  timestamp: '2023-06-02T08:11:47.649Z'
+}
+{
+  meta: {
+    req: {
+      url: '/smsReminders/users/createUser',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.29.3',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': '055ef3ff-28c4-4192-b187-53b82c2f9844',
+        host: 'localhost:1310',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '257'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/smsReminders/users/createUser',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 295
+  },
+  level: 'info',
+  message: 'id: , client: [object Object]',
+  timestamp: '2023-06-02T08:33:48.158Z'
+}
+{
+  meta: {
+    req: {
+      url: '/smsReminders/users/createUser',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.29.3',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': 'd840cc96-7f37-4411-a9ec-fc8a42d9affe',
+        host: 'localhost:1310',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '257'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/smsReminders/users/createUser',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 262
+  },
+  level: 'info',
+  message: 'id: , client: [object Object]',
+  timestamp: '2023-06-02T08:34:05.408Z'
+}
+{
+  meta: {
+    req: {
+      url: '/smsReminders/engine/smsEngine',
+      headers: {
+        'user-agent': 'PostmanRuntime/7.29.3',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': '32ecc422-f8a6-4610-8812-76d561204e39',
+        host: 'localhost:1310',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/smsReminders/engine/smsEngine',
+      query: {}
+    },
+    res: { statusCode: 500 },
+    responseTime: 12
+  },
+  level: 'info',
+  message: 'id: , client: [object Object]',
+  timestamp: '2023-06-02T08:34:57.949Z'
+}
+{
+  meta: {
+    req: {
+      url: '/smsReminders/engine/smsEngine',
+      headers: {
+        'user-agent': 'PostmanRuntime/7.29.3',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': '31c56cff-9a33-4c61-87e8-1a19f2857b63',
+        host: 'localhost:1310',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/smsReminders/engine/smsEngine',
+      query: {}
+    },
+    res: { statusCode: 500 },
+    responseTime: 18
+  },
+  level: 'info',
+  message: 'id: , client: [object Object]',
+  timestamp: '2023-06-02T08:35:39.112Z'
+}
+{
+  meta: {
+    req: {
+      url: '/smsReminders/engine/smsEngine',
+      headers: {
+        'user-agent': 'PostmanRuntime/7.29.3',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': '4db7ede6-4cd7-4b61-bca1-734d2dec8157',
+        host: 'localhost:1310',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/smsReminders/engine/smsEngine',
+      query: {}
+    },
+    res: { statusCode: 500 },
+    responseTime: 13
+  },
+  level: 'info',
+  message: 'id: , client: [object Object]',
+  timestamp: '2023-06-02T12:03:48.354Z'
+}
+{
+  meta: {
+    req: {
+      url: '/smsReminders/engine/smsEngine',
+      headers: {
+        'user-agent': 'PostmanRuntime/7.29.3',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': '0efa5002-ec49-4dae-aa79-cb2de512e822',
+        host: 'localhost:1310',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/smsReminders/engine/smsEngine',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 4
+  },
+  level: 'info',
+  message: 'id: , client: [object Object]',
+  timestamp: '2023-06-02T12:15:40.239Z'
+}

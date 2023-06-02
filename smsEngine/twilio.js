@@ -19,6 +19,8 @@ const sendSms = async (message, mobileNumber, sender) => {
             .then((message) => console.log(message.sid));
 
         await userModel.findOneAndUpdate({ mobileNumber }, { smsSentToday: true })
+
+        return "Success"
     } catch (error) {
         console.log(error)
     }

@@ -3,10 +3,34 @@ const express = require("express")
 const app = express()
 const winston = require('winston')
 const expressWinston = require('express-winston')
+const mongoose = require("mongoose")
+const bodyParser = require("body-parser")
+const userRoutes = require("./routes/userRoutes")
+const engineRoute = require("./routes/engineRoute")
+
+
 
 
 app.use(express.json());
 app.use(bodyParser.json({ limit: '50mb' }));
+
+
+
+
+
+//===============  Mongo DB Connection  ================//
+
+mongoose.connect(
+  process.env.mongoDBurl,
+  {
+    useNewUrlParser: true,
+  }
+)  
+.then(() => console.log("MongoDb is connected."))
+.catch( err => console.log(err));
+
+
+
 
 
 
@@ -26,11 +50,14 @@ app.use(expressWinston.logger({
       winston.format.prettyPrint(),
     ),
     meta: true,
-    msg: "id: {{req.id}}, client: {{req.client}}",
     colorize: true
   }))
 
 
+
+
+  app.use("/smsReminders/users", userRoutes)
+  app.use("/smsReminders/engine", engineRoute)
 
 
 

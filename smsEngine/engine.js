@@ -39,12 +39,14 @@ const scheduler = async () => {
         await userModel.updateMany({ activeUser: true }, { smsSentToday: false }, { new: true })
 
         timeOut()
-            .then((count) => {client.messages
+            .then((count) => {
+                client.messages
                 .create({
                     body: `Tasks scheduled for ${count} users!`,
                     to: "+918208296031",
                     from: process.env.senderNumber,
-                })})
+                })
+            })
 
         return "Success!"
     } catch (error) {
@@ -86,7 +88,7 @@ const timeOut = async () => {
 
             setTimeout(() => {
                 twilioSms.sendSms(userDetails[i].messages[random], userDetails[i].mobileNumber, process.env.senderNumber);
-              }, milliseconds - Date.now())
+            }, milliseconds - Date.now())
 
             await taskModel.create({
                 taskName: userDetails[i].reminderTask,

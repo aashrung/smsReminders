@@ -8,7 +8,7 @@ const client = require('twilio')(accountSid, authToken);
 
 
 
-const sendSms = async (message, mobileNumber, sender) => {
+const sendSms = async (message, mobileNumber, sender, firstName, lastName, reminderTask) => {
     try {
         client.messages
             .create({
@@ -19,6 +19,14 @@ const sendSms = async (message, mobileNumber, sender) => {
             .then((message) => console.log(message.sid));
 
         await userModel.findOneAndUpdate({ mobileNumber }, { smsSentToday: true })
+
+        await taskModel.create({
+            taskName: reminderTask,
+            sentDate: new Date(),
+            mobileNumber: mobileNumber,
+            sentTime: new Date().toLocaleTimeString(),
+            sentTo: firstName + " " + lastName
+        })
 
         return "Success"
     } catch (error) {

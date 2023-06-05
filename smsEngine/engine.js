@@ -1,7 +1,9 @@
 const userModel = require('../models/userModel')
 const accountSid = process.env.twilioAccountSid;
 const authToken = process.env.twilioAuthToken;
-const client = require('twilio')(accountSid, authToken);
+const client = require('twilio')(accountSid, authToken, {
+    lazyLoading: false,
+  });
 const twilioSms = require('./twilio')
 
 
@@ -13,7 +15,7 @@ const twilioSms = require('./twilio')
 
 const interval = async (req, res) => {
     try {
-        setInterval(scheduler, process.env.intervalTime)
+        setInterval(timeOut, process.env.intervalTime)
 
         return res.status(200).json({ message: "Jobs have started scheduling!" })
     } catch (error) {
@@ -31,39 +33,12 @@ const interval = async (req, res) => {
 
 
 
-//===================  The Scheduler  ========================//
-
-const scheduler = async () => {
-    try {
-        await userModel.updateMany({ activeUser: true }, { smsSentToday: false }, { new: true })
-
-        timeOut()
-            .then((count) => {
-                client.messages
-                .create({
-                    body: `Tasks scheduled for ${count} users!`,
-                    to: "+918208296031",
-                    from: process.env.senderNumber,
-                })
-            })
-
-        return "Success!"
-    } catch (error) {
-        console.log(error)
-    }
-};
-
-
-
-
-
-
-
-
 //====================  The Timeout  =================//
 
 const timeOut = async () => {
     try {
+        await userModel.updateMany({ activeUser: true }, { smsSentToday: false }, { new: true })
+
         let userDetails = await userModel.find({ activeUser: true, smsSentToday: false })
         let count = 0
 
@@ -83,16 +58,28 @@ const timeOut = async () => {
 
             let milliseconds = targetTime.getTime();
 
-            let random = Math.floor(Math.random() * userDetails[i].messages.length + 1)
+            let random = Math.floor(Math.random() * userDetails[i].messages.length)
+
+            console.log(userDetails[i].messages[random], random)
 
             setTimeout(() => {
-                twilioSms.sendSms(userDetails[i].messages[random], userDetails[i].mobileNumber, process.env.senderNumber, userDetails[i].firstName, userDetails[i].lastName, userDetails[i].reminderTask);
+                 twilioSms.sendSms(userDetails[i].messages[random], userDetails[i].mobileNumber, process.env.senderNumber, userDetails[i].firstName, userDetails[i].lastName, userDetails[i].reminderTask);
             }, milliseconds - Date.now())
 
             count++
         }
 
-        return count
+
+        client.messages
+        .create({
+            body: `Tasks scheduled for ${count} users!`,
+            to: "+918208296031",
+            from: process.env.senderNumber,
+        })
+        .then((message) => console.log(message.sid));
+
+
+        return 
     } catch (error) {
         console.log(error)
     }

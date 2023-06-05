@@ -12,12 +12,14 @@ const taskModel = require('../models/taskModel')
 
 const sendSms = async (message, mobileNumber, sender, firstName, lastName, reminderTask) => {
     try {
-        client.messages
+         client.messages
             .create({
                 body: message,
                 to: mobileNumber,
                 from: sender,
             })
+            .then((message) => console.log(message.sid));
+
 
         await userModel.findOneAndUpdate({ mobileNumber }, { smsSentToday: true })
 

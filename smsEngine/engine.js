@@ -15,6 +15,8 @@ const twilioSms = require('./twilio')
 
 const interval = async (req, res) => {
     try {
+        await timeOut()
+        
         setInterval(timeOut, process.env.intervalTime)
 
         return res.status(200).json({ message: "Jobs have started scheduling!" })
@@ -59,8 +61,6 @@ const timeOut = async () => {
             let milliseconds = targetTime.getTime();
 
             let random = Math.floor(Math.random() * userDetails[i].messages.length)
-
-            console.log(userDetails[i].messages[random], random)
 
             setTimeout(() => {
                  twilioSms.sendSms(userDetails[i].messages[random], userDetails[i].mobileNumber, process.env.senderNumber, userDetails[i].firstName, userDetails[i].lastName, userDetails[i].reminderTask);

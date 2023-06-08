@@ -17,7 +17,8 @@ const createUser = async (req, res) => {
         if (!mobileNumber || typeof mobileNumber != "string") return res.status(400).json({ message: "mobileNumber is required!" })
 
 
-        await userModel.create(req.body)
+        let haha = await userModel.create(req.body)
+        console.log(haha)
         return res.status(200).json({ data: req.body })
 
     } catch (error) {

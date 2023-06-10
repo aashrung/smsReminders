@@ -18,7 +18,6 @@ const createUser = async (req, res) => {
 
 
         let haha = await userModel.create(req.body)
-        console.log(haha)
         return res.status(200).json({ data: req.body })
 
     } catch (error) {

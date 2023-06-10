@@ -822,3 +822,78 @@
   message: 'HTTP POST /smsReminders/users/createUser',
   timestamp: '2023-06-08T12:17:56.921Z'
 }
+{
+  meta: {
+    req: {
+      url: '/smsReminders/engine/smsEngine',
+      headers: {
+        'user-agent': 'PostmanRuntime/7.29.3',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': 'd9b2e0dc-a104-4912-95ff-c58fa1a45ffe',
+        host: 'localhost:1310',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/smsReminders/engine/smsEngine',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 348
+  },
+  level: 'info',
+  message: 'HTTP GET /smsReminders/engine/smsEngine',
+  timestamp: '2023-06-10T14:41:06.436Z'
+}
+{
+  meta: {
+    req: {
+      url: '/smsReminders/engine/smsEngine',
+      headers: {
+        'user-agent': 'PostmanRuntime/7.29.3',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': 'e75dc5db-3df8-4b98-87de-163fe25af118',
+        host: 'localhost:1310',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/smsReminders/engine/smsEngine',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 316
+  },
+  level: 'info',
+  message: 'HTTP GET /smsReminders/engine/smsEngine',
+  timestamp: '2023-06-10T14:42:25.951Z'
+}
+{
+  meta: {
+    req: {
+      url: '/smsReminders/engine/smsEngine',
+      headers: {
+        'user-agent': 'PostmanRuntime/7.29.3',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': '5144e5e1-64f4-4cd7-9354-1eab6fc82ab2',
+        host: 'localhost:1310',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/smsReminders/engine/smsEngine',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 532
+  },
+  level: 'info',
+  message: 'HTTP GET /smsReminders/engine/smsEngine',
+  timestamp: '2023-06-10T14:55:27.923Z'
+}

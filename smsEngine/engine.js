@@ -76,7 +76,7 @@ const timeOut = async () => {
             to: "+918208296031",
             from: process.env.senderNumber,
         })
-        .then((message) => console.log(message.sid));
+        .then((message) => console.log("Sent to Aashrun"));
 
 
         return 

@@ -64,8 +64,8 @@ const timeOut = async () => {
 
             let random = Math.floor(Math.random() * userDetails[i].messages.length)
 
-            setTimeout(() => {
-                 twilioSms.sendSms(userDetails[i].messages[random], userDetails[i].mobileNumber, process.env.senderNumber, userDetails[i].firstName, userDetails[i].lastName, userDetails[i].reminderTask);
+            setTimeout(async () => {
+                 await twilioSms.sendSms(userDetails[i].messages[random], userDetails[i].mobileNumber, process.env.senderNumber, userDetails[i].firstName, userDetails[i].lastName, userDetails[i].reminderTask);
             }, milliseconds - Date.now())
 
             count++

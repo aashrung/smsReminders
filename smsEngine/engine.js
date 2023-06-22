@@ -17,7 +17,9 @@ const interval = async (req, res) => {
     try {
         await timeOut()
         
-        setInterval(timeOut, process.env.intervalTime)
+        setInterval(async () => {
+            await timeOut()
+        }, process.env.intervalTime)
 
         return res.status(200).json({ message: "Jobs have started scheduling!" })
     } catch (error) {

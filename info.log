@@ -897,3 +897,53 @@
   message: 'HTTP GET /smsReminders/engine/smsEngine',
   timestamp: '2023-06-10T14:55:27.923Z'
 }
+{
+  meta: {
+    req: {
+      url: '/smsReminders/engine/smsEngine',
+      headers: {
+        'user-agent': 'PostmanRuntime/7.29.3',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': 'd1df5efe-cd34-458d-8452-5b83b8d91f8a',
+        host: 'localhost:1310',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/smsReminders/engine/smsEngine',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 117
+  },
+  level: 'info',
+  message: 'HTTP GET /smsReminders/engine/smsEngine',
+  timestamp: '2023-06-12T07:53:18.813Z'
+}
+{
+  meta: {
+    req: {
+      url: '/smsReminders/engine/smsEngine',
+      headers: {
+        'user-agent': 'PostmanRuntime/7.29.3',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': '6fb39dc0-ce3e-49c5-9814-0565d4389290',
+        host: 'localhost:1310',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/smsReminders/engine/smsEngine',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 118
+  },
+  level: 'info',
+  message: 'HTTP GET /smsReminders/engine/smsEngine',
+  timestamp: '2023-06-12T07:57:13.379Z'
+}
